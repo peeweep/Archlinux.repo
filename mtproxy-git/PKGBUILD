@@ -15,8 +15,8 @@
 # Maintainer: Aleksey Filippov <sarum9in@gmail.com>
 
 pkgname=mtproxy-git
-pkgver=17.580909c
-pkgrel=2
+pkgver=27.2c94211
+pkgrel=1
 pkgdesc="Proxy server for Telegram messaging app"
 arch=('i686' 'x86_64')
 url='https://github.com/TelegramMessenger/MTProxy'
