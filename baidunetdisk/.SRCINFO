@@ -1,5 +1,5 @@
 pkgbase = baidunetdisk
-	pkgdesc = baidunetdisk rpm verison
+	pkgdesc = baidu netdisk rpm verison
 	pkgver = 2.0.1
 	pkgrel = 1
 	url = https://pan.baidu.com/
