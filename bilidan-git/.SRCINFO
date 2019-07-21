@@ -1,6 +1,6 @@
 pkgbase = bilidan-git
 	pkgdesc = Play videos on Bilibili.com with MPV and Danmaku2ASS
-	pkgver = 20160512
+	pkgver = 20170704
 	pkgrel = 1
 	url = https://github.com/m13253/BiliDan
 	arch = any
