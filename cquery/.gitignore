@@ -1,0 +1,6 @@
+doctest
+loguru
+msgpack-c
+pugixml
+rapidjson
+sparsepp
