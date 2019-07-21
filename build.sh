@@ -18,8 +18,8 @@ rm ${repo_path}/${db_name}.*
 for i in ${all_pkg}; do
 
   # sign all
-  gpg --detach-sign "${i}"
+  gpg --detach-sign "${repo_path}/${i}"
 
   # build repo db
-  repo-add "${db_name}.db.tar.gz" "${i}"
+  repo-add "${repo_path}/${db_name}.db.tar.gz" "${repo_path}/${i}"
 done
