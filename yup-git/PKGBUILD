@@ -1,6 +1,6 @@
 pkgname=yup-git
 _pkgname=yup
-pkgver=v0.1.7.beta.r2.gb3d3888
+pkgver=v0.1.8.beta.r1.gb764aa8
 pkgrel=1
 pkgdesc="Arch Linux AUR Helper with ncurses functionality and better searching and sorting"
 arch=('any')
