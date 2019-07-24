@@ -5,7 +5,7 @@
 # Contributor: Chris Brannon <cmbrannon79@gmail.com>
 
 pkgname=stow-git
-pkgver=20180211
+pkgver=20190629
 pkgrel=1
 pkgdesc='Manage installation of multiple softwares in the same directory tree, git version'
 url='http://www.gnu.org/software/stow/'
