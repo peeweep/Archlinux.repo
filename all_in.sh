@@ -13,6 +13,8 @@ for i in ${source_code}; do
 done
 
 repo_path="your_/archlinux/x86_64"
+cp ${source_code_project}/*/*.pkg.tar.xz ${repo_path}
+
 all_pkg=$(find "${repo_path}" -name "*.pkg.tar.xz" | awk -F "/" '{print $NF}')
 db_name="fermiarcs"
 
