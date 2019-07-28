@@ -36,16 +36,19 @@ for i in ${all_pkg}; do
     version=$(echo ${i} | sed "s/-${remove}//g" | sed "s/${package}-//g" | awk -F ' ' '{print $1}')
     # version: 69.0b6-1
 
-    # delete the old version
-    if [[ -f ${repo_path}/${package}_version.txt ]]; then
-      echo "${package}_version.txt exist"
-      rm ${repo_path}/${i}*
+    # get the lastest_package
+    find ${repo_path} -name "${package}-[0-9]*.pkg.tar.xz" >>${package}_version.txt
+    lastest_package=$(sort -rV ${package}_version.txt | head -n 1)
 
-    # save the newest version
-    else
-      echo ${version} >${repo_path}/${package}_version.txt
-      gpg --batch --passphrase-file your_password_file --pinentry-mode loopback --detach-sign "${repo_path}/${i}"
-      repo-add "${repo_path}/${db_name}.db.tar.gz" "${repo_path}/${i}"
+    if [[ ${repo_path}/${i} == ${lastest_package} ]]; then
+      # sign and repo-add the lastest_package
+      gpg --batch --passphrase-file your_password_file --pinentry-mode loopback --detach-sign "${lastest_package}"
+      repo-add "${repo_path}/${db_name}.db.tar.gz" "${lastest_package}"
+      # remove old packages
+      sed -i "s~${lastest_package}~~" ${package}_version.txt
+      for i in $(sort firefox-beta-bin_version.txt | uniq); do
+        rm ${i}*
+      done
 
     fi
   # only have one version
