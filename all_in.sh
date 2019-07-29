@@ -46,7 +46,7 @@ for i in ${all_pkg}; do
       repo-add "${repo_path}/${db_name}.db.tar.gz" "${lastest_package}"
       # remove old packages
       sed -i "s~${lastest_package}~~" ${package}_version.txt
-      for i in $(sort firefox-beta-bin_version.txt | uniq); do
+      for i in $(sort ${package}_version.txt | uniq); do
         rm ${i}*
       done
 
