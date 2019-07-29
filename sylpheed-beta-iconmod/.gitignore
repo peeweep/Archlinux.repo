@@ -1,4 +1,1 @@
-*.asc
-*.gz
-*.tar
-*.bz2
+!*icon-set.tar.gz
