@@ -37,16 +37,16 @@ for i in ${all_pkg}; do
     # version: 69.0b6-1
 
     # get the lastest_package
-    find ${repo_path} -name "${package}-[0-9]*.pkg.tar.xz" >>${package}_version.txt
-    lastest_package=$(sort -rV ${package}_version.txt | head -n 1)
+    find ${repo_path} -name "${package}-[0-9]*.pkg.tar.xz" >>${repo_path}/${package}_version.txt
+    lastest_package=$(sort -rV ${repo_path}/${package}_version.txt | head -n 1)
 
     if [[ ${repo_path}/${i} == ${lastest_package} ]]; then
       # sign and repo-add the lastest_package
       gpg --batch --passphrase-file your_password_file --pinentry-mode loopback --detach-sign "${lastest_package}"
       repo-add "${repo_path}/${db_name}.db.tar.gz" "${lastest_package}"
       # remove old packages
-      sed -i "s~${lastest_package}~~" ${package}_version.txt
-      for i in $(sort ${package}_version.txt | uniq); do
+      sed -i "s~${lastest_package}~~" ${repo_path}/${package}_version.txt
+      for i in $(sort ${repo_path}/${package}_version.txt | uniq); do
         rm ${i}*
       done
 
