@@ -14,7 +14,7 @@ pkgbase = chromium-widevine
 	provides = chromium-widevine-dev=4.10.1440.18
 	conflicts = chromium-widevine-dev
 	options = !strip
-	source = chrome-eula_text-20190626.html::https://www.google.com/intl/en/chrome/privacy/eula_text.html
+	source = chrome-eula_text-20190627.html::https://www.google.com/intl/en/chrome/privacy/eula_text.html
 	source = https://dl.google.com/linux/deb/pool/main/g/google-chrome-stable/google-chrome-stable_76.0.3809.87-1_amd64.deb
 	source = get_cdm_version.c
 	sha256sums = 5d675e1125ede0bf4676ced3da2f7c90c641269f5b158bf003c9322bf0129d43

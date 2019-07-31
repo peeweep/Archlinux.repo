@@ -2,3 +2,5 @@
 */
 *.tar.*
 *.log
+*.deb
+*.html
