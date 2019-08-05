@@ -3,7 +3,7 @@
 
 pkgname=qtwebflix-git
 _gitname=qtwebflix
-pkgver=0.1.r178.g9842aaa
+pkgver=0.1.r179.g1596524
 pkgrel=1
 pkgdesc='Standalone HD Netflix Browser using qt5-webengine (also supports Amazon prime, HBO Go, Hulu, Crunchy Roll)'
 arch=('any')
@@ -37,6 +37,10 @@ prepare() {
 build() {
    
    cd ${srcdir}/${_gitname}
+
+   # some AUR helpers keep the "build" directory from the previous build
+   rm -rf build
+
    mkdir build && cd build
    qmake -config release ..
    make
