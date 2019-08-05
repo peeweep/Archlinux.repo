@@ -1,4 +1,4 @@
 updpkgsums
 namcap PKGBUILD
-makepkg --syncdeps -f
+makepkg --syncdeps --force --noconfirm
 makepkg --printsrcinfo > .SRCINFO
