@@ -1,12 +1,12 @@
 pkgbase = baidunetdisk
 	pkgdesc = baidu netdisk rpm verison
-	pkgver = 2.0.1
+	pkgver = 2.0.2
 	pkgrel = 1
 	url = https://pan.baidu.com/
 	arch = x86_64
 	license = custom
-	source = http://issuecdn.baidupcs.com/issue/netdisk/LinuxGuanjia/baidunetdisk_linux_2.0.1.rpm
-	md5sums = 134bea2832e8e74c1646eb09f375b008
+	source = http://issuecdn.baidupcs.com/issue/netdisk/LinuxGuanjia/2.0.2/baidunetdisk_linux_2.0.2.rpm
+	md5sums = 4f6cd066474fbdd2fc65fcc94dab5342
 
 pkgname = baidunetdisk
 

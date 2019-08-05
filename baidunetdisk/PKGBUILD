@@ -1,6 +1,6 @@
 # Maintainer: me
 pkgname=baidunetdisk
-pkgver=2.0.1
+pkgver=2.0.2
 pkgrel=1
 _rpmname="${pkgname}_linux_${pkgver}.rpm"
 pkgdesc="baidu netdisk rpm verison"
@@ -8,9 +8,10 @@ arch=("x86_64")
 url="https://pan.baidu.com/"
 license=('custom')
 depends=()
-source=("http://issuecdn.baidupcs.com/issue/netdisk/LinuxGuanjia/${_rpmname}")
+source=("http://issuecdn.baidupcs.com/issue/netdisk/LinuxGuanjia/${pkgver}/${_rpmname}")
+
 package() {
 	cp -r ${srcdir}/opt ${pkgdir}/
 	cp -r ${srcdir}/usr ${pkgdir}/
 }
-md5sums=('134bea2832e8e74c1646eb09f375b008')
+md5sums=('4f6cd066474fbdd2fc65fcc94dab5342')
