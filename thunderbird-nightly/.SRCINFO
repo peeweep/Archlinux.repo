@@ -1,6 +1,6 @@
 pkgbase = thunderbird-nightly
 	pkgdesc = Standalone Mail/News reader - Nightly build
-	pkgver = 70.0a1.20190803
+	pkgver = 70.0a1.20190805
 	pkgrel = 1
 	url = http://www.mozilla.org/thunderbird
 	install = thunderbird-nightly.install
@@ -36,8 +36,8 @@ pkgbase = thunderbird-nightly
 	source = https://download-installer.cdn.mozilla.net/pub/thunderbird/nightly/latest-comm-central/thunderbird-70.0a1.en-US.linux-x86_64.tar.bz2
 	source = thunderbird-nightly.desktop
 	source = vendor.js
-	sha512sums = 85eb5307b9c4725c16b7b6b954b687832d6caaa3221b1ee07ccba4ea8537b5d812b6741203f20c26e3104dde7dfdcb1180f9442162483d043554969a5166fe19
-	sha512sums = 82880cf19c368f592430b4f8a2a05a68cdd350cac141dfda24fbce62901b7e31cb6579812ccefdba749918e9896caa5a668fc2ac649bc25dfe7fc6a560cd1fec
+	sha512sums = db474dab4dcc20964918dbb605b0cdc2e3bec325d0d2ca05b8f24262db06505993337652489bc9559036fed4ef94847a6c1f8f356e95b6320411bf182e8b7a98
+	sha512sums = afc64c133bedf1b6e7b384a4acc535baaa590a7f37a890b2209bc001da7503fe284e645f03406a01445a4c04b3a280bae594839830bd9767c217772ad3632ce4
 	sha512sums = c75c6d5b6f48e25a3c2ea666ae9b42f4e3372de9aaf6cd4270f3356c7046f9f19caa1651e5d779b95d790edfd4dd39dc3f4261361d882a62166dc9e91e9e8cb1
 	sha512sums = aeb444784732267f1b1e87e6084a776f82a1912c4c2637d2cf1de1c135dd9d41d2ef66d2bd3f9cbd3a79fad32d17ea6e2968ba644d5f887cb66ba6c09a2098f5
 
