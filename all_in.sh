@@ -10,6 +10,7 @@ for i in ${source_code}; do
   namcap PKGBUILD
   makepkg --syncdeps --force --noconfirm
   makepkg --printsrcinfo >.SRCINFO
+  sudo pacman -Rns $(pacman -Qtdq) --noconfirm
 done
 
 repo_path="your_/archlinux/x86_64"
@@ -63,6 +64,3 @@ done
 if [ -n "$(find ${repo_path} -maxdepth 1 -name '*_version.txt')" ]; then
   rm ${repo_path}/*_version.txt
 fi
-
-sudo pacman -Rns $(pacman -Qtdq)
-
