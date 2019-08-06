@@ -1,0 +1,11 @@
+[Trigger]
+Operation = Upgrade
+Type = File
+Target = boot/vmlinuz*
+
+[Action]
+Description = Restoring Linux kernel modules...
+When = PostTransaction
+Depends = coreutils
+Depends = rsync
+Exec = /bin/sh -xc 'KVER="${KVER:-$(uname -r)}"; if test -e "/usr/lib/modules/backup/${KVER}"; then rsync -AHXal --ignore-existing "/usr/lib/modules/backup/${KVER}" /usr/lib/modules/; fi; rm -rf /usr/lib/modules/backup'
