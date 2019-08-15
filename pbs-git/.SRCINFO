@@ -1,6 +1,6 @@
 pkgbase = pbs-git
 	pkgdesc = less styles for pb
-	pkgver = r13.15ba7a3
+	pkgver = r21.96a4488
 	pkgrel = 1
 	url = https://github.com/ptpb/pbs
 	arch = any

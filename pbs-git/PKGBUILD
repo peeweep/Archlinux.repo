@@ -1,5 +1,5 @@
 pkgname=pbs-git
-pkgver=r13.15ba7a3
+pkgver=r21.96a4488
 pkgrel=1
 pkgdesc="less styles for pb"
 arch=('any')
