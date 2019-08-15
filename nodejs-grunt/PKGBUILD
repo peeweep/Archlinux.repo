@@ -9,8 +9,8 @@
 
 _npmname=grunt
 pkgname=nodejs-grunt # All lowercase
-pkgver=1.0.1
-pkgrel=2
+pkgver=1.0.4
+pkgrel=1
 pkgdesc="The JavaScript Task Runner"
 arch=(any)
 url="http://gruntjs.com/"
@@ -20,7 +20,7 @@ makedepends=('npm')
 optdepends=()
 source=(http://registry.npmjs.org/$_npmname/-/$_npmname-$pkgver.tgz)
 noextract=($_npmname-$pkgver.tgz)
-sha1sums=('e8778764e944b18f32bb0f10b9078475c9dfb56b')
+sha1sums=('c799883945a53a3d07622e0737c8f70bfe19eb38')
 
 package() {
 	cd $srcdir
