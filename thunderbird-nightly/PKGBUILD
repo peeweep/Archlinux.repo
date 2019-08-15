@@ -4,7 +4,7 @@
 # Based on [extra]'s thunderbird
 
 pkgname=thunderbird-nightly
-pkgver=70.0a1.20190807
+pkgver=70.0a1.20190812
 _version=70.0a1
 pkgrel=1
 pkgdesc='Standalone Mail/News reader - Nightly build'
@@ -27,8 +27,8 @@ source=("${FX_SRC_URI}.txt"
         "$pkgname.desktop"
         "vendor.js")
 
-sha512sums=('3a7f0bcc7d22fafcaea4ae19165ea6d4dd152a0457066f4c855c77cf002404ba4bc5167ade1f39ae1f616a0e208485172e8209f4d216e6082638f57cad41424b'
-            'f6f9a51b22909ccc36302c0a97a65c8e7f917555c1ce1dfa06ffaad555fcb66bfd88bb3b7213b423e434a06bfb4145bae7ac3db5d4ed0c40e849961db91d54e9'
+sha512sums=('66b07f97cc360d981107d3b1c1d9b3f34c1377247ea93b3d770766f34c1cdaad7bd0cf1b58b071ece08de31a5a914391c7cbb54ef88d39483ea04c3d6147837f'
+            '5286f4b0e46ab46707c2999e479649dd717de5303df70097696541a2820eace7ec00ee74f4b6dfce6aaa28fb7b445cef1a45f00761dc07c74cc0f3714a20d2f5'
             'c75c6d5b6f48e25a3c2ea666ae9b42f4e3372de9aaf6cd4270f3356c7046f9f19caa1651e5d779b95d790edfd4dd39dc3f4261361d882a62166dc9e91e9e8cb1'
             'aeb444784732267f1b1e87e6084a776f82a1912c4c2637d2cf1de1c135dd9d41d2ef66d2bd3f9cbd3a79fad32d17ea6e2968ba644d5f887cb66ba6c09a2098f5')
 
