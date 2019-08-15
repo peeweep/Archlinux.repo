@@ -3,6 +3,7 @@
 */*.deb
 */*.tar*
 */*.zip
+*/*.tgz
 */*.rar
 */*.rpm
 */.project
