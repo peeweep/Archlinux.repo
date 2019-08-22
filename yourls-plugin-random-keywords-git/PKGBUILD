@@ -1,7 +1,7 @@
 # Maintainer: Alexander Görtz <aur@nyloc.de>
 
 pkgname=yourls-plugin-random-keywords-git
-pkgver=0.0
+pkgver=r7.addccdb
 pkgrel=1
 pkgdesc="Assign random keywords to shorturls, like bitly."
 arch=('any')
