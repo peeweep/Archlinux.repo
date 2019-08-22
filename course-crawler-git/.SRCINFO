@@ -1,0 +1,18 @@
+pkgbase = course-crawler-git
+	pkgdesc = 🎓 中国大学MOOC、学堂在线、网易云课堂、好大学在线、爱课程 MOOC 课程下载。
+	pkgver = 20181219.78aa42c
+	pkgrel = 1
+	url = https://mooc.xoy.io/
+	arch = any
+	license = MIT
+	makedepends = git
+	depends = python-beautifulsoup4
+	depends = python-lxml
+	depends = python-requests
+	source = course-crawler::git+https://github.com/Foair/course-crawler.git
+	source = course-crawler.sh
+	md5sums = SKIP
+	md5sums = 2f2a4cfd9c8ae2094365d0c31dc9c501
+
+pkgname = course-crawler-git
+
