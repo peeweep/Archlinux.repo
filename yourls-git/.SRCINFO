@@ -1,6 +1,6 @@
 pkgbase = yourls-git
 	pkgdesc = your own URL shortener
-	pkgver = 1.0.826.gb9844f1
+	pkgver = 1.7.435.g9e36c67b
 	pkgrel = 1
 	url = https://github.com/YOURLS/YOURLS
 	install = yourls-git.install

@@ -2,7 +2,7 @@
 
 pkgname=yourls-git
 _gitname=YOURLS
-pkgver=1.0.826.gb9844f1
+pkgver=1.7.435.g9e36c67b
 pkgrel=1
 pkgdesc="your own URL shortener"
 arch=('any')
