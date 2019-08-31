@@ -1,0 +1,19 @@
+pkgbase = python-minieigen-git-peeweep
+	pkgdesc = Boost::Python wrapper for parts of the Eigen c++ library
+	pkgver = 20190831.f5b429a
+	pkgrel = 1
+	url = https://github.com/peeweep/minieigen
+	arch = x86_64
+	license = LGPLv3
+	makedepends = git
+	makedepends = boost
+	makedepends = eigen
+	makedepends = python>=3.5
+	depends = boost
+	depends = eigen
+	depends = python>=3.5
+	source = python-minieigen-git-peeweep::git+https://github.com/peeweep/minieigen.git
+	md5sums = SKIP
+
+pkgname = python-minieigen-git-peeweep
+

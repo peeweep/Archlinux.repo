@@ -1,0 +1,28 @@
+# Maintainer: peeweep <peeweep at 0x0 dot ee>
+
+pkgname=('python-minieigen-git-peeweep')
+pkgdesc="Boost::Python wrapper for parts of the Eigen c++ library"
+pkgver=20190831.f5b429a
+pkgrel=1
+license=('LGPLv3')
+url='https://github.com/peeweep/minieigen'
+arch=('x86_64')
+makedepends=('git' 'boost' 'eigen' 'python>=3.5')
+depends=('boost' 'eigen' 'python>=3.5')
+source=("${pkgname}::git+${url}.git")
+md5sums=('SKIP')
+
+pkgver() {
+	cd "${srcdir}/${pkgname}"
+	git log -1 --format='%cd.%h' --date=short | tr -d -
+}
+
+build() {
+	cd "${srcdir}/${pkgname}"
+	python setup.py build
+}
+
+package() {
+	cd "${srcdir}/${pkgname}"
+	python setup.py install --root="${pkgdir}" --skip-build
+}
