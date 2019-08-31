@@ -4,7 +4,7 @@ pkgname=('python-minieigen-git-peeweep')
 pkgdesc="Boost::Python wrapper for parts of the Eigen c++ library"
 pkgver=20190831.f5b429a
 pkgrel=1
-license=('LGPLv3')
+license=('LGPL3')
 url='https://github.com/peeweep/minieigen'
 arch=('x86_64')
 makedepends=('git' 'boost' 'eigen' 'python>=3.5')
