@@ -8,7 +8,7 @@ for i in ${source_code}; do
   cd "${source_code_project}/${i}" || return
   updpkgsums
   namcap PKGBUILD
-  makepkg --syncdeps --force --noconfirm
+  makepkg --syncdeps --force --noconfirm --nocheck
   makepkg --printsrcinfo >.SRCINFO
   sudo pacman -Rns $(pacman -Qtdq) --noconfirm
 done
