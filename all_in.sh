@@ -6,11 +6,8 @@ source_code=$(ls -l ${source_code_project} | awk '/^d/ {print $NF}')
 # makepkg from source code folder
 for i in ${source_code}; do
   cd "${source_code_project}/${i}" || return
-  updpkgsums
-  namcap PKGBUILD
-  makepkg --syncdeps --force --noconfirm --nocheck
+  extra-x86_64-build -c -- -- --nocheck
   makepkg --printsrcinfo >.SRCINFO
-  sudo pacman -Rns $(pacman -Qtdq) --noconfirm
 done
 
 repo_path="your_/archlinux/x86_64"
