@@ -1,2 +1,5 @@
-python-minieigen-git-peeweep
+pkg/
+src/
+*.pkg.tar.xz
+python-minieigen-git/
 
