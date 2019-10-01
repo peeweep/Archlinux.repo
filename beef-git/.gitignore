@@ -1,6 +1,0 @@
-*.log
-*.pkg.tar.xz
-*.tar.gz
-pkg/
-src/
-beef-git/
