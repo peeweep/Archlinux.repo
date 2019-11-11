@@ -1,0 +1,10 @@
+Repo:
+
+[peeweep]
+Server = https://peeweep.de/~pkg/archlinux/x86_64
+
+Keyring:
+
+  curl https://peeweep.de/pubring.gpg | sudo pacman-key -a -
+  sudo pacman-key --lsign-key A4A9C04411BE1F71
+  sudo pacman -Syu
